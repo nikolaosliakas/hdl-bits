@@ -54,8 +54,10 @@ endmodule
 ### Wires
 The connections assigned aren't a new wire but their meeting.
 
-In `src/wire_decl.v`, I wrote three wires that perform logic on 4 inputs to produce 2 outputs.
+1. In `src/wire_decl.v`, I wrote three wires that perform logic on 4 inputs to produce 2 outputs.
 
+2. In `src/chip7458.v`, I defined the following both ways.
+    Create a module with the same functionality as the 7458 chip. It has 10 inputs and 2 outputs. You may choose to use an assign statement to drive each of the output wires, or you may choose to declare (four) wires for use as intermediate signals, where each internal wire is driven by the output of one of the AND gates. For extra practice, try it both ways. 
 
 
 
